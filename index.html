@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="./style.css">
+    <link
+  href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css"
+  rel="stylesheet"
+/>
+</head>
+<body>
+    
+    <nav class="flex items-center justify-evenly py-3">
+        <img src="./images/logo.p.png" alt="">
+        <ul class="ul hidden md:flex items-center justify-evenly w-[45%] text-[17px]">
+            <li>HOME</li>
+            <li>ABOUT</li>
+            <li>SERVICES</li>
+            <li>CLIENT</li>
+            <li>CONTACT US</li>
+        </ul>
+        <i class="hidden md:block ri-user-3-fill text-[22px] cursor-pointer hover:text-[#fa7f63]"></i>
+        <i class="hidden md:block ri-search-line text-[22px] cursor-pointer hover:text-[#fa7f63]"></i>
+        <button class="hidden md:block ring-1 p-3 text-[18px] text-white bg-[#fa7f63] rounded-[50px] cursor-pointer"><i class="ri-phone-fill mr-2"></i>Call: +1234567890</button>
+        <i class="md:hidden ri-menu-line text-[24px] menu"></i>
+    </nav>
+
+
+
+
+
+</body>
+
+<script>
+        let menu = document.querySelector(".menu")
+        let ul = document.querySelector(".ul")
+
+        menu.addEventListener("click",()=>{
+            ul.classList.toggle("show")
+        })
+    </script>
+
+</html>

@@ -1,0 +1,69 @@
+html,body{
+    overflow-x: hidden;
+}
+
+
+
+@media screen and (max-width:768px){
+    nav{
+        justify-content: space-between;
+        ul{
+            animation: slide .2s linear;
+            display: none; 
+            /* background-color: aqua; */
+            flex-direction: column;
+            position: absolute;
+            width: 29%;
+            height: 25vh;
+            top: 60px;
+            padding: 10px;
+            right: 0;
+            color: white;
+            background-color: #ea920e;
+            border-radius: 0px;
+        }
+
+        li{
+            animation: slide2 .3s linear;
+        }
+        
+        .show{
+            display: flex;
+            /* flex-direction: column; */
+        }
+        .menu{
+            position: relative;
+            display: block;
+            font-size: 30px;     
+        }
+    }
+}
+
+
+@keyframes slide{
+        from {
+            transform: translateX(100px);
+        }
+        to{
+            transform: translateX(0);
+        }
+    }
+
+    @keyframes slide2{
+        from {
+            transform: scale(.4);
+        }
+        to{
+            transform: scale(1);
+        }
+    }
+
+
+
+nav{
+    ul{
+        li:hover{
+            color: #fa7f63;
+        }
+    }
+}
