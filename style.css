@@ -37,6 +37,13 @@ html,body{
             font-size: 30px;     
         }
     }
+
+    .box1{
+        .ddance{
+            height: 80%;
+            width: 70%;
+        }
+    }
 }
 
 
